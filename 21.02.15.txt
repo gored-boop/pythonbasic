@@ -1,0 +1,31 @@
+vs 코드 visual studio
+주피터 놋북
+
+>>> a[1] = 4  (언어는 0부터 시작. 1번째 자리가 바뀜
+>>> a
+[1, 4, 3]
+>>> b
+[1, 4, 3]
+
+\n	문자열 안에서 줄을 바꿀 때 사용
+\t	문자열 사이에 탭 간격을 줄 때 사용 
+위 두가지만 주로사용
+
+
+
+문자열 길이 구하기 *빈칸도 글자수
+문자열의 길이는 다음과 같이 len 함수를 사용하면 구할 수 있다. len 함수는 print 함수처럼 파이썬의 기본 내장 함수로 별다른 설정 없이 바로 사용할 수 있다.
+
+>>> a = "Life is too short"
+>>> len(a)
+17
+
+github.com
+
+
+21.02.15
+1. a 2. c 3. a 4. b 5. a 6. d 7. b 8.d 9.c 10.d
+
+http://austiny.snu.ac.kr/
+
+https://github.com/gored-boop/pythonbasic
