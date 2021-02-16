@@ -1,0 +1,1718 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t1 = ()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 2,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t4 = 1,2,3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 4,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 4,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t2 = 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 6,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 6,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 7,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t3 = (1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 8,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 8,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 9,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "t5 = (1,)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 10,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 10,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(t5)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 13,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 0\n",
+    "while a < 10:\n",
+    "    a = a + 1\n",
+    "    print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "################################\n",
+    "#for\n",
+    "################################"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "one\n",
+      "two\n",
+      "three\n"
+     ]
+    }
+   ],
+   "source": [
+    "test_list = ['one', 'two', 'three']\n",
+    "for i in test_list:\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번 학생은 합격입니다.\n",
+      "2번 학생은 불합격입니다.\n",
+      "3번 학생은 합격입니다.\n",
+      "4번 학생은 불합격입니다.\n",
+      "5번 학생은 합격입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "marks = [90, 25, 67, 45, 80]\n",
+    "\n",
+    "number = 0\n",
+    "for mark in marks:\n",
+    "    number = number +1\n",
+    "    if mark >= 60:\n",
+    "        print('%d번 학생은 합격입니다.' % number)\n",
+    "    else:\n",
+    "        print('%d번 학생은 불합격입니다.' %number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 17,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번 학생 축하합니다. 합격입니다.\n",
+      "3번 학생 축하합니다. 합격입니다.\n",
+      "5번 학생 축하합니다. 합격입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "marks = [90, 25, 67, 45, 80]\n",
+    "\n",
+    "number = 0\n",
+    "for mark in marks:\n",
+    "    number = number +1\n",
+    "    if mark < 60:\n",
+    "        continue\n",
+    "    print('%d번 학생 축하합니다. 합격입니다.' % number)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 18,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = range(10)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 19,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "range(0, 10)"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "add = 0\n",
+    "for i in range(1, 11):\n",
+    "    add = add +i"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(add)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "2\n",
+      "3\n",
+      "4\n",
+      "5\n",
+      "6\n",
+      "7\n",
+      "8\n",
+      "9\n",
+      "10\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1, 11):\n",
+    "    print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1, 11):\n",
+    "    if i % 2 == 1:\n",
+    "        print(i)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번 학생 축하합니다. 합격입니다.\n",
+      "3번 학생 축하합니다. 합격입니다.\n",
+      "5번 학생 축하합니다. 합격입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "marks = [90, 25, 67, 45, 80]\n",
+    "for number in range(len(marks)):\n",
+    "    if marks[number] <  60:\n",
+    "        continue\n",
+    "    print('%d번 학생 축하합니다. 합격입니다.' % (number+1))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2 4 6 8 10 12 14 16 18 \n",
+      "3 6 9 12 15 18 21 24 27 \n",
+      "4 8 12 16 20 24 28 32 36 \n",
+      "5 10 15 20 25 30 35 40 45 \n",
+      "6 12 18 24 30 36 42 48 54 \n",
+      "7 14 21 28 35 42 49 56 63 \n",
+      "8 16 24 32 40 48 56 64 72 \n",
+      "9 18 27 36 45 54 63 72 81 \n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(2,10):\n",
+    "    for j in range(1,10):\n",
+    "        print(i*j, end=\" \")\n",
+    "    print('')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n",
+      "3\n",
+      "5\n",
+      "7\n",
+      "9\n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(1,11):\n",
+    "    if i % 2 == 1:\n",
+    "        print(i)\n",
+    "    else:\n",
+    "        continue"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 38,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2 4 6 8 10 12 14 16 18 \n",
+      "3 6 9 12 15 18 21 24 27 \n",
+      "4 8 12 16 20 24 28 32 36 \n",
+      "5 10 15 20 25 30 35 40 45 \n",
+      "6 12 18 24 30 36 42 48 54 \n",
+      "7 14 21 28 35 42 49 56 63 \n",
+      "8 16 24 32 40 48 56 64 72 \n",
+      "9 18 27 36 45 54 63 72 81 \n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(2,10):\n",
+    "    for j in range(1,10):\n",
+    "        print(i*j, end=\" \")\n",
+    "    print('')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 39,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 6, 9, 12]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1,2,3,4,]\n",
+    "result = []\n",
+    "for num in a:\n",
+    "    result.append(num*3)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[3, 6, 9, 12]\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = [1,2,3,4]\n",
+    "result = [num * 3 for num in a]\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "166833\n"
+     ]
+    }
+   ],
+   "source": [
+    "sum = 0\n",
+    "i= 1\n",
+    "while i <=1000:\n",
+    "    if i % 3 == 0: #3의 배수인지 확인\n",
+    "        sum = sum + i\n",
+    "    i= i+ 1\n",
+    "    \n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 51,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "*\n",
+      "**\n",
+      "***\n",
+      "****\n",
+      "*****\n"
+     ]
+    }
+   ],
+   "source": [
+    "i = 0\n",
+    "while True:\n",
+    "    i = i + 1\n",
+    "    if i > 5: break\n",
+    "    print(i * '*')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5050\n"
+     ]
+    }
+   ],
+   "source": [
+    "sum = 0\n",
+    "for i in range(1,101):\n",
+    "    sum = sum + i\n",
+    "    \n",
+    "print(sum)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add(a, b):\n",
+    "    return a+ b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 68,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 3\n",
+    "b = 4\n",
+    "c = add(a, b)\n",
+    "print(c)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "d = add(1,2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(d)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 71,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say():\n",
+    "    return 'hi'"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 73,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hi\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = say()\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add(a,b):\n",
+    "    print('%d, %d의 합은 %d입니다.' %(a,b,a+b))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 78,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3, 4의 합은 7입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "add(3,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 79,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "3, 4의 합은 7입니다.\n",
+      "None\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = add(3,4)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 80,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say():\n",
+    "    print('hi')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "hi\n"
+     ]
+    }
+   ],
+   "source": [
+    "say()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 82,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add_many(*args):\n",
+    "    result = 0\n",
+    "    for i in args:\n",
+    "        result = result + i\n",
+    "    return result"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "6\n"
+     ]
+    }
+   ],
+   "source": [
+    "result = add_many(1,2,3)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "55\n"
+     ]
+    }
+   ],
+   "source": [
+    "result = add_many(1,2,3,4,5,6,7,8,9,10)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 85,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add_mul(choice, *args):\n",
+    "    if choice == \"add\":\n",
+    "        result = 0\n",
+    "        for i in args:\n",
+    "            result = result + i\n",
+    "    elif choice == \"mul\":\n",
+    "        result = 1\n",
+    "        for i in args:\n",
+    "            result = result * i\n",
+    "    return result"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "15\n"
+     ]
+    }
+   ],
+   "source": [
+    "result = add_mul('add', 1,2,3,4,5)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "120\n"
+     ]
+    }
+   ],
+   "source": [
+    "result = add_mul('mul', 1,2,3,4,5,)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add_and_mul(a,b):\n",
+    "    return a+b, a*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 90,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "result = add_and_mul(3,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 91,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "(7, 12)\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 92,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "result1, result2 = add_and_mul(3,4)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 94,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result1)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 95,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "12\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result2)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 96,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def add_and_mul(a,b):\n",
+    "    return a+b\n",
+    "    return a*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 97,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "result = add_and_mul(2,3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 98,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "5\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 101,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def say_myself(name, old, man=True):\n",
+    "    print(\"나의 이름은 %s 입니다.\" % name)\n",
+    "    print(\"나이은 %d살입니다.\" % old)\n",
+    "    if man:\n",
+    "        print(\"남자입니다.\")\n",
+    "    else:\n",
+    "        print(\"여자입니다.\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "나의 이름은 박응용 입니다.\n",
+      "나이은 27살입니다.\n",
+      "남자입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "say_myself(\"박응용\", 27)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 103,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "나의 이름은 박응선 입니다.\n",
+      "나이은 27살입니다.\n",
+      "여자입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "say_myself(\"박응선\", 27, False)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = 1\n",
+    "def vartest(a):\n",
+    "    a = a + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "vartest(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# 지역 변수 : 특정 범위안에서만 통용\n",
+    "# 전역 변수 : 전체에서 통용"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "def vartest(a):\n",
+    "    a = a + 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 110,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "vartest(3)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 111,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 112,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 1\n",
+    "def vartest(a):\n",
+    "    a = a + 1\n",
+    "    return a\n",
+    "\n",
+    "a = vartest(a)\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 114,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "2\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 1\n",
+    "def vartest():\n",
+    "    global a\n",
+    "    a = a+1\n",
+    "    \n",
+    "\n",
+    "vartest()\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "7\n"
+     ]
+    }
+   ],
+   "source": [
+    "add = lambda a, b: a+b\n",
+    "result = add(3, 4)\n",
+    "print(result)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 118,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123165\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = input()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 119,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'123165'"
+      ]
+     },
+     "execution_count": 119,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "숫자를 입력하세요: 1223132\n"
+     ]
+    }
+   ],
+   "source": [
+    "number = int(input('숫자를 입력하세요: '))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 122,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1223132"
+      ]
+     },
+     "execution_count": 122,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "number"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 123,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "123\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 123\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 126,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "python\n"
+     ]
+    }
+   ],
+   "source": [
+    "a = 'python'\n",
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 125,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'python'"
+      ]
+     },
+     "execution_count": 125,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 127,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a = [1,2,3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 128,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1, 2, 3]\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 132,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lifeistoo short\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Life' 'is' 'too short')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 131,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Lifeistoo short\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Life' + 'is' + 'too short')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Life is too short\n"
+     ]
+    }
+   ],
+   "source": [
+    "print('Life', 'is', 'too short')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 137,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "0 1 2 3 4 5 6 7 8 9 "
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(10):\n",
+    "    print(i, end =' ')"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 138,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = open(\"새파일.txt\", 'w')\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 139,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# cmd 열기\n",
+    "# 관리자명령프롬프트\n",
+    "\n",
+    "# dir : 디렉토리 안에 있는 파일의 목록 확인\n",
+    "# cd 디렉토리명 : 특정 디렉토리 안으로 이동\n",
+    "# md 디렉토리명 : 디렉토리 생성\n",
+    "# rd 디렉토리명 : 디렉토리 삭제\n",
+    "# cd.. : 디렉토리에서 빠져 나올때\n",
+    "\n",
+    "    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 140,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = open('새파일.txt', 'w')\n",
+    "for i in range(1,10):\n",
+    "    data = '%d번째 줄입니다. \\n' %i\n",
+    "    f.write(data)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 142,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번째 줄입니다. \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "f = open('새파일.txt', 'r')\n",
+    "line = f.readline()\n",
+    "print(line)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 143,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번째 줄입니다. \n",
+      "\n",
+      "2번째 줄입니다. \n",
+      "\n",
+      "3번째 줄입니다. \n",
+      "\n",
+      "4번째 줄입니다. \n",
+      "\n",
+      "5번째 줄입니다. \n",
+      "\n",
+      "6번째 줄입니다. \n",
+      "\n",
+      "7번째 줄입니다. \n",
+      "\n",
+      "8번째 줄입니다. \n",
+      "\n",
+      "9번째 줄입니다. \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "f = open('새파일.txt', 'r')\n",
+    "while True:\n",
+    "    line = f.readline()\n",
+    "    if not line: break\n",
+    "    print(line)\n",
+    "    \n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 144,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번째 줄입니다. \n",
+      "\n",
+      "2번째 줄입니다. \n",
+      "\n",
+      "3번째 줄입니다. \n",
+      "\n",
+      "4번째 줄입니다. \n",
+      "\n",
+      "5번째 줄입니다. \n",
+      "\n",
+      "6번째 줄입니다. \n",
+      "\n",
+      "7번째 줄입니다. \n",
+      "\n",
+      "8번째 줄입니다. \n",
+      "\n",
+      "9번째 줄입니다. \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "f = open('새파일.txt', 'r')\n",
+    "lines = f.readlines()\n",
+    "for line in lines:\n",
+    "    print(line)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 145,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "1번째 줄입니다. \n",
+      "2번째 줄입니다. \n",
+      "3번째 줄입니다. \n",
+      "4번째 줄입니다. \n",
+      "5번째 줄입니다. \n",
+      "6번째 줄입니다. \n",
+      "7번째 줄입니다. \n",
+      "8번째 줄입니다. \n",
+      "9번째 줄입니다. \n",
+      "\n"
+     ]
+    }
+   ],
+   "source": [
+    "f = open('새파일.txt', 'r')\n",
+    "data = f.read()\n",
+    "print(data)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 150,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "f = open('새파일.txt', 'a')\n",
+    "for i in range(11, 20):\n",
+    "    data = '%d번째 줄입니다.\\n' % i\n",
+    "    f.write(data)\n",
+    "f.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 151,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# dos 명령어를 사용해서 새파일.txt 열어서 확인하세요"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 153,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "짝수\n"
+     ]
+    }
+   ],
+   "source": [
+    "def is_odd(i):\n",
+    "    if i % 2 == 1:\n",
+    "        return print('홀수')\n",
+    "    else:\n",
+    "        return print('짝수')\n",
+    "\n",
+    "is_odd(8)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 154,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.0"
+      ]
+     },
+     "execution_count": 154,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "def average(*args):\n",
+    "    sum = 0 \n",
+    "    for i in args:\n",
+    "        sum = sum + i\n",
+    "    return sum / len(args)\n",
+    "    \n",
+    "average(1,2,3)    "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 156,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "첫번째 숫자를 입력하세요:3\n",
+      "두번째 숫자를 입력하세요:6\n",
+      "두 수의 합은 9 입니다.\n"
+     ]
+    }
+   ],
+   "source": [
+    "input1 = int(input('첫번째 숫자를 입력하세요:'))\n",
+    "input2 = int(input('두번째 숫자를 입력하세요:'))\n",
+    "\n",
+    "total = input1 + input2\n",
+    "print('두 수의 합은 %s 입니다.' %total)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 157,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "youneedpython\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(\"\".join([\"you\", \"need\", \"python\"]))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 160,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "Life is too short\n"
+     ]
+    }
+   ],
+   "source": [
+    "f1 = open('test.txt', 'w')\n",
+    "f1.write('Life is too short')\n",
+    "f1.close()\n",
+    "\n",
+    "f2 = open('test.txt', 'r')\n",
+    "print(f2.read())\n",
+    "f2.close()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
