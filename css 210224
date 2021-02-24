@@ -1,0 +1,10 @@
+/* id > class > type */
+
+/* class> type */
+.color{
+  color:red;
+}
+
+h3{
+  color: green;
+}
