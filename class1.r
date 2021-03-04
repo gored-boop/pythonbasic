@@ -1,5 +1,5 @@
  a  <- 1
  a
 
- alt - 1
- 
+<-   alt -
+실행 alt enter
